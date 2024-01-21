@@ -1,13 +1,93 @@
-body {
+*{
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(122, 87, 55);
+  color: aliceblue;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+}
+.welcome{
+  width: 100vw;
+  height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-left: 15px;
+ gap: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.welcome:first-child{
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+.welcome button{
+  width: 90px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  border: 3px solid green;
+  background-color: yellow;
+  text-transform: capitalize;
+  color: green;
+  cursor: pointer;
+}
+.quiz_section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+.time{
+  position:absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+ width: 270px;
+}
+.buttons button, .submission button,.score button{
+  width: 80px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+position: relative;
+bottom: 0;
+padding: 5px;
+text-transform: capitalize;
+font-weight: bold;
+cursor: pointer;
+}
+.submission, .score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
 }
